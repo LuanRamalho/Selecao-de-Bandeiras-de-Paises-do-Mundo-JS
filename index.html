@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibição de Bandeiras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exibição de Bandeiras</h1>
+    <div>
+        <label for="continent">Selecione o Continente:</label>
+        <select id="continent" onchange="populateCountries()">
+            <option value="">Selecione</option>
+            <option value="africa">África</option>
+            <option value="asia">Ásia</option>
+            <option value="europe">Europa</option>
+            <option value="north-america">América do Norte</option>
+            <option value="center-america">América Central</option>
+            <option value="south-america">América do Sul</option>
+            <option value="oceania">Oceania</option>
+            <option value="antarctica">Antartida</option>
+        </select>
+    </div>
+    <div>
+        <label for="country">Selecione o País:</label>
+        <select id="country" onchange="displayFlag()">
+            <option value="">Selecione</option>
+        </select>
+    </div>
+    <div id="flag-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
